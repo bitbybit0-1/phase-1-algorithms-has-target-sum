@@ -1,11 +1,20 @@
 function hasTargetSum(array, target) {
-  // Write your algorithm here
+for(x=0;x<array.length;x++){
+  for(i=x+1;i<array.length;i++){
+     if(array[x]+array[i]===target){
+      return true
+     }
+    
+  }
+ 
+
+}return false
 }
 
 /* 
   Write the Big O time complexity of your function here
 */
-
+//exponential time quadratic O(n^2)
 /* 
   Add your pseudocode here
 */
